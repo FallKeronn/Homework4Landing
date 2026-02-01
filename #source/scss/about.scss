@@ -1,0 +1,266 @@
+@import "../scss/reset.scss";
+
+$purple: #9C6FE2;
+$orange: #FF6B0A;
+
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.header {
+   background-color: $purple;
+
+   &__container {
+      max-width: 1164px;
+      margin: 0 auto;
+      color: white;
+   }
+
+   &__logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+   }
+
+   &__logo-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+
+   &__logo-img {}
+
+   &__logo-text {
+      font-size: 14px;
+   }
+
+   &__nav {
+      display: flex;
+      gap: 16px;
+   }
+
+   a {
+      color: #ffffff;
+
+      &:hover {
+         color: #5EB5F7;
+      }
+   }
+}
+
+.courses {
+
+   &__container {
+      max-width: 1164px;
+      margin: 0 auto;
+   }
+
+   &__title {}
+
+   &__mainContent {}
+}
+
+.title {
+   padding: 70px 0 86px 0;
+
+   &__allCourses {
+      font-size: 48px;
+      font-weight: bold;
+      color: $orange;
+   }
+
+   &__freeConsultation {
+      font-size: 16px;
+      padding: 50px 0;
+   }
+
+   &__popularCourses {
+      font-size: 48px;
+      font-weight: bold;
+      color: $orange;
+   }
+}
+
+.mainContent {
+   display: flex;
+   flex-wrap: wrap;
+   color: #fff;
+   gap: 25px;
+   padding-bottom: 112px;
+
+   &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex: 0 1 calc((100% - 2 * 25px) / 3);
+      min-height: 328px;
+      border-radius: 10px;
+
+   }
+
+   &__card-title {
+      font-size: 32px;
+      font-weight: bold;
+      padding: 21px 0 61px 31px;
+   }
+
+   &__card-text {
+      font-size: 14px;
+      max-width: 275px;
+      padding-left: 31px;
+   }
+
+   &__card-btn {
+      align-self: flex-start;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 14px 96px;
+      margin: 56px 53px 40px 38px;
+      border: 2px solid white;
+      border-radius: 15px;
+      color: white;
+   }
+}
+
+.purple {
+   background-color: $purple;
+}
+
+.blue {
+   background-color: #273DA4;
+}
+
+.orange {
+   background-color: #E69927;
+}
+
+.lightred {
+   background-color: #E44A59;
+}
+
+.darkpurple {
+   background-color: #623771;
+}
+
+.pink {
+   background-color: #D90083;
+}
+
+.green {
+   background-color: #1DA551;
+}
+
+.lightpink {
+   background-color: #D062D1;
+
+}
+
+.greyblue {
+   background-color: #5B86A1;
+}
+
+.footer {
+   background-color: #000;
+   color: white;
+
+   &__container {
+      max-width: 1164px;
+      margin: 0 auto;
+   }
+
+   &__topPart {
+      padding-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 10px;
+   }
+
+   &__logo {
+      max-width: 75px;
+      height: auto;
+   }
+
+   &__contacts {
+      display: flex;
+      gap: 238px;
+   }
+
+   &__address {}
+
+   &__phones {}
+
+   &__email {}
+
+   &__socials {
+      display: flex;
+      justify-content: end;
+      padding-bottom: 64px;
+      gap: 8px;
+   }
+
+   &__socials-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 40%;
+      gap: 8px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.blue {
+         background-color: #3D6DE6;
+      }
+
+      &.pink {
+         background-color: #D53692;
+      }
+
+      &.darkblue {
+         background-color: #3F76B6;
+      }
+
+      &.lightblue {
+         background-color: #5EB5F7;
+      }
+
+      &.red {
+         background-color: #E02900;
+      }
+   }
+
+   &__bottomPart {
+      font-size: 10px;
+      color: #4D4D4D;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 46px;
+   }
+
+   &__copyright {}
+
+   &__links {
+      display: flex;
+      gap: 52px;
+   }
+
+   .footer__link,
+   .footer__phones a,
+   .footer__email a {
+      color: #ffffff;
+
+      &:hover {
+         color: #5EB5F7;
+      }
+   }
+}
