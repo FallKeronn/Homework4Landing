@@ -21,6 +21,14 @@ body {
       max-width: 1164px;
       margin: 0 auto;
       color: white;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 13px 0px 13px;
+      }
    }
 
    &__logo {
@@ -35,8 +43,6 @@ body {
       align-items: center;
       gap: 30px;
    }
-
-   &__logo-img {}
 
    &__logo-text {
       font-size: 14px;
@@ -54,6 +60,44 @@ body {
          color: #5EB5F7;
       }
    }
+
+   @media (max-width: 1280px) {
+      &__logo {
+         padding: 30px 40px 30px 40px;
+      }
+
+      &__logo-left {
+         gap: 15px;
+      }
+
+      &__nav {
+         gap: 16px;
+      }
+
+      &__logo-text {
+         font-size: 14px;
+      }
+   }
+
+   @media (max-width: 376px) {
+      &__logo {
+         padding: 26px 13px 20px 13px;
+         text-align: start;
+         justify-content: start;
+      }
+
+      &__logo-left {
+         gap: 15px;
+      }
+
+      &__nav {
+         display: none;
+      }
+
+      &__logo-text {
+         font-size: 14px;
+      }
+   }
 }
 
 .section {
@@ -62,6 +106,14 @@ body {
    &__container {
       max-width: 1164px;
       margin: 0 auto;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 13px 0px 13px;
+      }
    }
 
 }
@@ -120,6 +172,44 @@ body {
       justify-content: center;
       padding-bottom: 43px;
    }
+
+   @media (max-width: 376px) {
+      &__mainTitle {
+         font-size: 20px;
+         font-weight: bold;
+         padding-top: 14px;
+      }
+
+      &__title {
+         font-size: 20px;
+         padding-top: 14px;
+         padding-bottom: 27px;
+      }
+
+      &__text {
+         font-size: 12px;
+      }
+
+      &__text-mission,
+      &__text-years,
+      &__text-teachers {
+         padding-bottom: 15px;
+      }
+
+      &__itCompanies {
+         font-size: 14px;
+         padding-bottom: 27px;
+      }
+
+      &__companiesLogo {
+         gap: 20px;
+         padding: 0;
+
+         img {
+            max-width: 72px;
+         }
+      }
+   }
 }
 
 .section2 {
@@ -129,6 +219,14 @@ body {
       max-width: 1164px;
       margin: 0 auto;
       padding: 82px 0 40px 0;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 13px 0px 13px;
+      }
    }
 }
 
@@ -157,9 +255,12 @@ body {
    &__students {
       display: flex;
       flex-direction: column;
-      max-width: 260px;
+      max-width: 259px;
+      max-height: 330px;
       padding: 19px 12px;
       background-color: white;
+      padding: 18px 38px 112px 38px;
+      border-radius: 15px;
    }
 
    &__students-title {
@@ -173,13 +274,74 @@ body {
       max-width: 218px;
    }
 
-   &__students-stars {}
-
    &__students-fullname {
       padding-bottom: 16px;
    }
 
-   &__students-studentRewiev {}
+   &__controls {
+      display: none;
+   }
+
+   @media (max-width: 376px) {
+      &__title {
+         max-width: 302px;
+         margin: 0 auto;
+         font-size: 20px;
+         padding-bottom: 16px;
+      }
+
+      &__grade {
+         max-width: 302px;
+         font-size: 14px;
+         padding-bottom: 32px;
+         margin: 0 auto;
+      }
+
+      &__students {
+         display: none;
+      }
+
+      &__students:first-child {
+         display: flex;
+         flex-direction: column;
+      }
+
+      &__studentBox {
+         justify-content: center;
+      }
+
+      &__students-title {
+         font-size: 13px;
+         padding-bottom: 16px;
+      }
+
+      &__students p {
+         font-size: 13px;
+         max-width: 218px;
+      }
+
+      &__students-fullname {
+         padding-bottom: 16px;
+      }
+
+      &__controls {
+         display: flex;
+         justify-content: space-around;
+         gap: 24px;
+         margin-top: 20px;
+         margin-bottom: 27px;
+      }
+
+      &__btn {
+         padding: 12px;
+         width: 51px;
+         height: 56px;
+         border-radius: 15px;
+         color: white;
+         background-color: $purple;
+         font-size: 25px;
+      }
+   }
 }
 
 .footer {
@@ -208,12 +370,6 @@ body {
       display: flex;
       gap: 238px;
    }
-
-   &__address {}
-
-   &__phones {}
-
-   &__email {}
 
    &__socials {
       display: flex;
@@ -261,8 +417,6 @@ body {
       padding-bottom: 46px;
    }
 
-   &__copyright {}
-
    &__links {
       display: flex;
       gap: 52px;
@@ -275,6 +429,71 @@ body {
 
       &:hover {
          color: #5EB5F7;
+      }
+   }
+
+   @media (max-width: 376px) {
+      &__topPart {
+         padding-top: 34px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 10px;
+      }
+
+      &__logo {
+         max-width: 75px;
+         height: auto;
+      }
+
+      &__contacts {
+         padding-top: 40px;
+         padding-bottom: 26px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         gap: 26px;
+      }
+
+      &__email {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      }
+
+      &__socials {
+         justify-content: center;
+         padding: 0;
+      }
+
+      &__bottomPart {
+         font-size: 10px;
+         color: #4D4D4D;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 60px;
+      }
+
+      &__copyright {
+         padding: 32px;
+      }
+
+      &__links {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 14px;
+
+      }
+
+      .footer__link {
+         color: #4D4D4D;
+
+         &:hover {
+            color: #5EB5F7;
+         }
       }
    }
 }

@@ -5,6 +5,7 @@ $orange: #FF6B0A;
 
 body {
    font-family: 'Montserrat', sans-serif;
+
 }
 
 .wrapper {
@@ -36,8 +37,6 @@ body {
       gap: 30px;
    }
 
-   &__logo-img {}
-
    &__logo-text {
       font-size: 14px;
    }
@@ -54,18 +53,60 @@ body {
          color: #5EB5F7;
       }
    }
+
+   @media (max-width: 1280px) {
+      &__logo {
+         padding: 30px 40px 46px 40px;
+      }
+
+      &__logo-left {
+         gap: 15px;
+      }
+
+      &__nav {
+         gap: 16px;
+      }
+
+      &__logo-text {
+         font-size: 14px;
+      }
+   }
+
+   @media (max-width: 376px) {
+      &__logo {
+         padding: 26px 13px 20px 13px;
+         text-align: start;
+         justify-content: start;
+      }
+
+      &__logo-left {
+         gap: 15px;
+      }
+
+      &__nav {
+         display: none;
+      }
+
+      &__logo-text {
+         font-size: 14px;
+      }
+   }
 }
 
 .courses {
-
    &__container {
       max-width: 1164px;
       margin: 0 auto;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 13px 0px 13px;
+      }
    }
 
-   &__title {}
-
-   &__mainContent {}
 }
 
 .title {
@@ -87,6 +128,10 @@ body {
       font-weight: bold;
       color: $orange;
    }
+
+   @media (max-width: 376px) {
+      padding: 26px 0 50px 0;
+   }
 }
 
 .mainContent {
@@ -104,7 +149,6 @@ body {
       flex: 0 1 calc((100% - 2 * 25px) / 3);
       min-height: 328px;
       border-radius: 10px;
-
    }
 
    &__card-title {
@@ -128,6 +172,22 @@ body {
       border: 2px solid white;
       border-radius: 15px;
       color: white;
+   }
+
+   @media (max-width: 1280px) {
+      gap: 10px;
+
+      &__card {
+         max-width: 340px;
+      }
+   }
+
+   @media (max-width: 376px) {
+      padding-bottom: 166px;
+
+      &__card {
+         max-width: 350px;
+      }
    }
 }
 
@@ -161,7 +221,6 @@ body {
 
 .lightpink {
    background-color: #D062D1;
-
 }
 
 .greyblue {
@@ -175,6 +234,14 @@ body {
    &__container {
       max-width: 1164px;
       margin: 0 auto;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 33px 0px 33px;
+      }
    }
 
    &__topPart {
@@ -194,12 +261,6 @@ body {
       display: flex;
       gap: 238px;
    }
-
-   &__address {}
-
-   &__phones {}
-
-   &__email {}
 
    &__socials {
       display: flex;
@@ -247,8 +308,6 @@ body {
       padding-bottom: 46px;
    }
 
-   &__copyright {}
-
    &__links {
       display: flex;
       gap: 52px;
@@ -261,6 +320,71 @@ body {
 
       &:hover {
          color: #5EB5F7;
+      }
+   }
+
+   @media (max-width: 376px) {
+      &__topPart {
+         padding-top: 34px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 10px;
+      }
+
+      &__logo {
+         max-width: 75px;
+         height: auto;
+      }
+
+      &__contacts {
+         padding-top: 40px;
+         padding-bottom: 26px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         gap: 26px;
+      }
+
+      &__email {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      }
+
+      &__socials {
+         justify-content: center;
+         padding: 0;
+      }
+
+      &__bottomPart {
+         font-size: 10px;
+         color: #4D4D4D;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 60px;
+      }
+
+      &__copyright {
+         padding: 32px;
+      }
+
+      &__links {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 14px;
+
+      }
+
+      .footer__link {
+         color: #4D4D4D;
+
+         &:hover {
+            color: #5EB5F7;
+         }
       }
    }
 }
