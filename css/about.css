@@ -132,11 +132,54 @@ body {
 .header a:hover {
   color: #5EB5F7;
 }
+@media (max-width: 1280px) {
+  .header__logo {
+    padding: 30px 40px 46px 40px;
+  }
+  .header__logo-left {
+    gap: 15px;
+  }
+  .header__nav {
+    gap: 16px;
+  }
+  .header__logo-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 376px) {
+  .header__logo {
+    padding: 26px 13px 20px 13px;
+    text-align: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__logo-left {
+    gap: 15px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__logo-text {
+    font-size: 14px;
+  }
+}
 
 .courses__container {
   max-width: 1164px;
   margin: 0 auto;
 }
+@media (max-width: 1280px) {
+  .courses__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .courses__container {
+    padding: 0 13px 0px 13px;
+  }
+}
+
 .title {
   padding: 70px 0 86px 0;
 }
@@ -153,6 +196,11 @@ body {
   font-size: 48px;
   font-weight: bold;
   color: #FF6B0A;
+}
+@media (max-width: 376px) {
+  .title {
+    padding: 26px 0 50px 0;
+  }
 }
 
 .mainContent {
@@ -206,6 +254,22 @@ body {
   border-radius: 15px;
   color: white;
 }
+@media (max-width: 1280px) {
+  .mainContent {
+    gap: 10px;
+  }
+  .mainContent__card {
+    max-width: 340px;
+  }
+}
+@media (max-width: 376px) {
+  .mainContent {
+    padding-bottom: 166px;
+  }
+  .mainContent__card {
+    max-width: 350px;
+  }
+}
 
 .purple {
   background-color: #9C6FE2;
@@ -250,6 +314,16 @@ body {
 .footer__container {
   max-width: 1164px;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .footer__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .footer__container {
+    padding: 0 33px 0px 33px;
+  }
 }
 .footer__topPart {
   padding-top: 36px;
@@ -340,4 +414,92 @@ body {
 .footer .footer__phones a:hover,
 .footer .footer__email a:hover {
   color: #5EB5F7;
+}
+@media (max-width: 376px) {
+  .footer__topPart {
+    padding-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 10px;
+  }
+  .footer__logo {
+    max-width: 75px;
+    height: auto;
+  }
+  .footer__contacts {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+  }
+  .footer__email {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  .footer__bottomPart {
+    font-size: 10px;
+    color: #4D4D4D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 60px;
+  }
+  .footer__copyright {
+    padding: 32px;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+  }
+  .footer .footer__link {
+    color: #4D4D4D;
+  }
+  .footer .footer__link:hover {
+    color: #5EB5F7;
+  }
 }

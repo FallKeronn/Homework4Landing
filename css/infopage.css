@@ -96,6 +96,16 @@ body {
   margin: 0 auto;
   color: white;
 }
+@media (max-width: 1280px) {
+  .header__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .header__container {
+    padding: 0 13px 0px 13px;
+  }
+}
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +142,38 @@ body {
 .header a:hover {
   color: #5EB5F7;
 }
+@media (max-width: 1280px) {
+  .header__logo {
+    padding: 30px 40px 30px 40px;
+  }
+  .header__logo-left {
+    gap: 15px;
+  }
+  .header__nav {
+    gap: 16px;
+  }
+  .header__logo-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 376px) {
+  .header__logo {
+    padding: 26px 13px 20px 13px;
+    text-align: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__logo-left {
+    gap: 15px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__logo-text {
+    font-size: 14px;
+  }
+}
 
 .section {
   background-color: #F9F4FF;
@@ -139,6 +181,16 @@ body {
 .section__container {
   max-width: 1164px;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .section__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .section__container {
+    padding: 0 13px 0px 13px;
+  }
 }
 
 .graduates__mainTitle {
@@ -189,6 +241,35 @@ body {
           justify-content: center;
   padding-bottom: 43px;
 }
+@media (max-width: 376px) {
+  .graduates__mainTitle {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 14px;
+  }
+  .graduates__title {
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 27px;
+  }
+  .graduates__text {
+    font-size: 12px;
+  }
+  .graduates__text-mission, .graduates__text-years, .graduates__text-teachers {
+    padding-bottom: 15px;
+  }
+  .graduates__itCompanies {
+    font-size: 14px;
+    padding-bottom: 27px;
+  }
+  .graduates__companiesLogo {
+    gap: 20px;
+    padding: 0;
+  }
+  .graduates__companiesLogo img {
+    max-width: 72px;
+  }
+}
 
 .section2 {
   background-color: #F9F4FF;
@@ -197,6 +278,16 @@ body {
   max-width: 1164px;
   margin: 0 auto;
   padding: 82px 0 40px 0;
+}
+@media (max-width: 1280px) {
+  .section2__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .section2__container {
+    padding: 0 13px 0px 13px;
+  }
 }
 
 .reviews__title {
@@ -227,9 +318,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 260px;
+  max-width: 259px;
+  max-height: 330px;
   padding: 19px 12px;
   background-color: white;
+  padding: 18px 38px 112px 38px;
+  border-radius: 15px;
 }
 .reviews__students-title {
   font-size: 14px;
@@ -243,6 +337,71 @@ body {
 .reviews__students-fullname {
   padding-bottom: 16px;
 }
+.reviews__controls {
+  display: none;
+}
+@media (max-width: 376px) {
+  .reviews__title {
+    max-width: 302px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+  .reviews__grade {
+    max-width: 302px;
+    font-size: 14px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+  }
+  .reviews__students {
+    display: none;
+  }
+  .reviews__students:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews__studentBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews__students-title {
+    font-size: 13px;
+    padding-bottom: 16px;
+  }
+  .reviews__students p {
+    font-size: 13px;
+    max-width: 218px;
+  }
+  .reviews__students-fullname {
+    padding-bottom: 16px;
+  }
+  .reviews__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 24px;
+    margin-top: 20px;
+    margin-bottom: 27px;
+  }
+  .reviews__btn {
+    padding: 12px;
+    width: 51px;
+    height: 56px;
+    border-radius: 15px;
+    color: white;
+    background-color: #9C6FE2;
+    font-size: 25px;
+  }
+}
+
 .footer {
   background-color: #000;
   color: white;
@@ -340,4 +499,92 @@ body {
 .footer .footer__phones a:hover,
 .footer .footer__email a:hover {
   color: #5EB5F7;
+}
+@media (max-width: 376px) {
+  .footer__topPart {
+    padding-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 10px;
+  }
+  .footer__logo {
+    max-width: 75px;
+    height: auto;
+  }
+  .footer__contacts {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+  }
+  .footer__email {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  .footer__bottomPart {
+    font-size: 10px;
+    color: #4D4D4D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 60px;
+  }
+  .footer__copyright {
+    padding: 32px;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+  }
+  .footer .footer__link {
+    color: #4D4D4D;
+  }
+  .footer .footer__link:hover {
+    color: #5EB5F7;
+  }
 }
