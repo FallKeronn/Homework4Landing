@@ -28,7 +28,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 30px;
+      padding: 30px 0;
    }
 
    &__logo-left {
@@ -44,6 +44,22 @@ body {
    &__nav {
       display: flex;
       gap: 16px;
+   }
+
+   &__burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      span {
+         width: 25px;
+         height: 3px;
+         background-color: white;
+         border-radius: 2px;
+      }
    }
 
    a {
@@ -76,7 +92,7 @@ body {
       &__logo {
          padding: 26px 13px 20px 13px;
          text-align: start;
-         justify-content: start;
+         justify-content: space-between;
       }
 
       &__logo-left {
@@ -85,6 +101,10 @@ body {
 
       &__nav {
          display: none;
+      }
+
+      &__burger {
+         display: flex;
       }
 
       &__logo-text {
@@ -598,7 +618,10 @@ body {
 
       &__photo {
          max-width: 400px;
-         max-height: 400px;
+      }
+
+      &__content {
+         flex: 1;
       }
 
       &__title {
@@ -647,6 +670,13 @@ body {
 
          &.orange {
             background-color: #E38800;
+         }
+      }
+
+      @media (max-width: 1280px) {
+         &__icon img {
+            max-width: 100%;
+            height: auto;
          }
       }
 
@@ -740,6 +770,11 @@ body {
          font-size: 16px;
       }
 
+      @media (max-width: 1280px) {
+         padding-right: 20px;
+         padding-left: 20px;
+      }
+
       @media (max-width: 376px) {
          padding: 0px 16px 0px 16px;
          margin-top: 41px;
@@ -764,6 +799,7 @@ body {
 
    .registration {
       display: flex;
+      align-items: center;
       gap: 75px;
       padding-bottom: 61px;
 
@@ -771,6 +807,7 @@ body {
          display: flex;
          flex-direction: column;
          align-items: center;
+         flex: 1;
       }
 
       &__title {
@@ -790,6 +827,16 @@ body {
          background-color: $orange;
          font-size: 18px;
          color: white;
+      }
+
+      @media (max-width: 1280px) {
+         flex-wrap: wrap;
+         justify-content: center;
+
+         &__icon img {
+            max-width: 100%;
+            height: auto;
+         }
       }
 
       @media (max-width: 376px) {
@@ -938,6 +985,7 @@ body {
 
 .promotion {
    display: flex;
+   align-items: center;
    gap: 75px;
    padding-bottom: 140px;
    color: white;
@@ -945,7 +993,12 @@ body {
 
    &__icon {
       max-width: 538px;
-      max-height: 410px;
+      flex: 0 0 auto;
+
+      img {
+         width: 100%;
+         height: auto;
+      }
    }
 
    &__content {
@@ -974,6 +1027,11 @@ body {
       color: white;
    }
 
+   @media (max-width: 1280px) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
    @media (max-width: 376px) {
       flex-direction: column;
       gap: 24px;
@@ -985,7 +1043,6 @@ body {
          img {
             max-width: 100%;
             height: auto;
-
          }
       }
 
@@ -1040,7 +1097,7 @@ body {
 
    &__contacts {
       display: flex;
-      gap: 238px;
+
    }
 
    &__socials {
@@ -1125,7 +1182,6 @@ body {
          display: flex;
          flex-wrap: wrap;
          justify-content: space-between;
-         gap: 26px;
       }
 
       &__email {
