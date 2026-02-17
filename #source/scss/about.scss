@@ -46,6 +46,22 @@ body {
       gap: 16px;
    }
 
+   &__burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      span {
+         width: 25px;
+         height: 3px;
+         background-color: white;
+         border-radius: 2px;
+      }
+   }
+
    a {
       color: #ffffff;
 
@@ -76,7 +92,7 @@ body {
       &__logo {
          padding: 26px 13px 20px 13px;
          text-align: start;
-         justify-content: start;
+         justify-content: space-between;
       }
 
       &__logo-left {
@@ -85,6 +101,10 @@ body {
 
       &__nav {
          display: none;
+      }
+
+      &__burger {
+         display: flex;
       }
 
       &__logo-text {
@@ -178,7 +198,22 @@ body {
       gap: 10px;
 
       &__card {
-         max-width: 340px;
+         flex: 0 1 calc((100% - 25px) / 2);
+         align-items: center;
+      }
+
+      &__card-title {
+         font-size: 32px;
+         font-weight: bold;
+         padding: 21px 0 61px 0px;
+      }
+
+      &__card-btn {
+         align-self: center;
+      }
+
+      &__card-text {
+         padding: 0;
       }
    }
 

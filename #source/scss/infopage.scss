@@ -21,14 +21,6 @@ body {
       max-width: 1164px;
       margin: 0 auto;
       color: white;
-
-      @media (max-width: 1280px) {
-         padding: 0 40px 0px 40px;
-      }
-
-      @media (max-width: 376px) {
-         padding: 0 13px 0px 13px;
-      }
    }
 
    &__logo {
@@ -53,6 +45,22 @@ body {
       gap: 16px;
    }
 
+   &__burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      span {
+         width: 25px;
+         height: 3px;
+         background-color: white;
+         border-radius: 2px;
+      }
+   }
+
    a {
       color: #ffffff;
 
@@ -63,7 +71,7 @@ body {
 
    @media (max-width: 1280px) {
       &__logo {
-         padding: 30px 40px 30px 40px;
+         padding: 30px 40px 46px 40px;
       }
 
       &__logo-left {
@@ -83,7 +91,7 @@ body {
       &__logo {
          padding: 26px 13px 20px 13px;
          text-align: start;
-         justify-content: start;
+         justify-content: space-between;
       }
 
       &__logo-left {
@@ -92,6 +100,10 @@ body {
 
       &__nav {
          display: none;
+      }
+
+      &__burger {
+         display: flex;
       }
 
       &__logo-text {
@@ -222,6 +234,8 @@ body {
 
       @media (max-width: 1280px) {
          padding: 0 40px 0px 40px;
+         margin-bottom: 55px;
+         gap: 10px;
       }
 
       @media (max-width: 376px) {
@@ -249,13 +263,14 @@ body {
 
    &__studentBox {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
    }
 
    &__students {
       display: flex;
       flex-direction: column;
-      max-width: 259px;
+      flex: 0 1 calc((100% - 3 * 20px) / 4);
       max-height: 330px;
       padding: 19px 12px;
       background-color: white;
@@ -351,6 +366,14 @@ body {
    &__container {
       max-width: 1164px;
       margin: 0 auto;
+
+      @media (max-width: 1280px) {
+         padding: 0 40px 0px 40px;
+      }
+
+      @media (max-width: 376px) {
+         padding: 0 33px 0px 33px;
+      }
    }
 
    &__topPart {

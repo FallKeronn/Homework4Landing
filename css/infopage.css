@@ -96,16 +96,6 @@ body {
   margin: 0 auto;
   color: white;
 }
-@media (max-width: 1280px) {
-  .header__container {
-    padding: 0 40px 0px 40px;
-  }
-}
-@media (max-width: 376px) {
-  .header__container {
-    padding: 0 13px 0px 13px;
-  }
-}
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +126,23 @@ body {
   display: flex;
   gap: 16px;
 }
+.header__burger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header__burger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
 .header a {
   color: #ffffff;
 }
@@ -144,7 +151,7 @@ body {
 }
 @media (max-width: 1280px) {
   .header__logo {
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px 46px 40px;
   }
   .header__logo-left {
     gap: 15px;
@@ -160,15 +167,20 @@ body {
   .header__logo {
     padding: 26px 13px 20px 13px;
     text-align: start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__logo-left {
     gap: 15px;
   }
   .header__nav {
     display: none;
+  }
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header__logo-text {
     font-size: 14px;
@@ -282,6 +294,8 @@ body {
 @media (max-width: 1280px) {
   .section2__container {
     padding: 0 40px 0px 40px;
+    margin-bottom: 55px;
+    gap: 10px;
   }
 }
 @media (max-width: 376px) {
@@ -306,9 +320,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
 }
 .reviews__students {
   display: -webkit-box;
@@ -318,7 +332,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 259px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc((100% - 60px) / 4);
+          flex: 0 1 calc((100% - 60px) / 4);
   max-height: 330px;
   padding: 19px 12px;
   background-color: white;
@@ -409,6 +425,16 @@ body {
 .footer__container {
   max-width: 1164px;
   margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .footer__container {
+    padding: 0 40px 0px 40px;
+  }
+}
+@media (max-width: 376px) {
+  .footer__container {
+    padding: 0 33px 0px 33px;
+  }
 }
 .footer__topPart {
   padding-top: 36px;
