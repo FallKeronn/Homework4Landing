@@ -177,7 +177,7 @@ body {
       gap: 10px;
 
       &__card {
-         flex: 1 1 calc((100% - 25px) / 2); // 2 колонки
+         flex: 1 1 calc((100% - 25px) / 2);
          max-width: none;
       }
    }
