@@ -145,7 +145,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       flex: 0 1 calc((100% - 2 * 25px) / 3);
       min-height: 328px;
       border-radius: 10px;
@@ -154,17 +154,16 @@ body {
    &__card-title {
       font-size: 32px;
       font-weight: bold;
-      padding: 21px 0 61px 31px;
+      padding: 21px 0 61px 0px;
    }
 
    &__card-text {
       font-size: 14px;
       max-width: 275px;
-      padding-left: 31px;
    }
 
    &__card-btn {
-      align-self: flex-start;
+      align-self: center;
       font-size: 12px;
       font-weight: bold;
       padding: 14px 96px;
@@ -178,7 +177,8 @@ body {
       gap: 10px;
 
       &__card {
-         max-width: 340px;
+         flex: 1 1 calc((100% - 25px) / 2); // 2 колонки
+         max-width: none;
       }
    }
 
